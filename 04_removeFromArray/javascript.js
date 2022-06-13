@@ -1,4 +1,4 @@
-const removeFromArray = function(array, val) {
+function removeFromArray(array, val) {
     let finalArray = [];
     for (let i = 0; i < array.length; i++) {
         if (array[i] === val) {
@@ -7,6 +7,3 @@ const removeFromArray = function(array, val) {
         return finalArray;
     }
 };
-
-// Do not edit below this line
-module.exports = removeFromArray;
