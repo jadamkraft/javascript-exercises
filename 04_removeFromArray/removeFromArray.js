@@ -1,11 +1,12 @@
 const removeFromArray = function(array, val) {
     let finalArray = [];
-    for (let i = 0; i < array.length; i++) {
+    let countLength = array.length;
+    for (let i = 0; i < countLength; i++) {
         if (array[i] === val) {
-            finalArray = array.concat(array[i]);
+        array.splice(i, 1);
         }
-        return finalArray;
     }
+    return array;
 };
 
 // Do not edit below this line
