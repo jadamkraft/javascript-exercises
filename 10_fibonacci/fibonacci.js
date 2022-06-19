@@ -1,4 +1,8 @@
 const fibonacci = function(num) {
+    let newNum = parseInt(num);
+    if (newNum < 1) {
+        return "OOPS";
+    } else {
     let valLeft = 0;
     let valRight = 1;
     let newValue = 0;
@@ -6,8 +10,9 @@ const fibonacci = function(num) {
         newValue = valLeft + valRight;
         valLeft = valRight;
         valRight = newValue;
-    }
+    };
     return valRight;
+    };
 };
 
 // Do not edit below this line
